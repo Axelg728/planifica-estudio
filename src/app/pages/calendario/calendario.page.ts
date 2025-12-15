@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { IonicModule, ModalController } from '@ionic/angular';
 import { ModalTareaComponent } from '../../components/modal-tarea/modal-tarea.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: false,
+  standalone: true,
+  imports: [IonicModule, CommonModule],
   selector: 'app-calendario',
   templateUrl: './calendario.page.html',
   styleUrls: ['./calendario.page.scss']

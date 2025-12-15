@@ -2,11 +2,21 @@ import { Component } from '@angular/core';
 import { MateriasService } from '../../services/materias.service';
 import { Materia } from '../../models/materia.model';
 
-@Component({  
-  standalone: false,
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+
+@Component({
   selector: 'app-materias',
   templateUrl: './materias.page.html',
   styleUrls: ['./materias.page.scss'],
+  standalone: true,
+  imports: [
+    IonicModule,
+    CommonModule,
+    FormsModule
+  ]
 })
 export class MateriasPage {
 

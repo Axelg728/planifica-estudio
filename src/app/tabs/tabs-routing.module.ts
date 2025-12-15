@@ -8,10 +8,10 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       { path: 'inicio', loadChildren: () => import('../pages/inicio/inicio.module').then(m => m.InicioPageModule) },
-      { path: 'materias', loadChildren: () => import('../pages/materias/materias.module').then(m => m.MateriasPageModule) },
-      { path: 'tareas', loadChildren: () => import('../pages/tareas/tareas.module').then(m => m.TareasPageModule) },
-      { path: 'calendario', loadChildren: () => import('../pages/calendario/calendario.module').then(m => m.CalendarioPageModule) },
-      { path: 'perfil', loadChildren: () => import('../pages/perfil/perfil.module').then(m => m.PerfilPageModule) },
+      { path: 'materias', loadChildren: () => import('../pages/materias/materias.page').then(m => m.MateriasPage) },
+      { path: 'tareas', loadChildren: () => import('../pages/tareas/tareas.page').then(m => m.TareasPage) },
+      { path: 'calendario', loadChildren: () => import('../pages/calendario/calendario.page').then(m => m.CalendarioPage) },
+      { path: 'perfil', loadChildren: () => import('../pages/perfil/perfil.page').then(m => m.PerfilPage) },
       { path: '', redirectTo: 'inicio', pathMatch: 'full' }
     ]
   }
