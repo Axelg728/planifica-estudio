@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
+
+import { ModalTareaComponent } from './modal-tarea.component';
+
+@NgModule({
+  declarations: [ModalTareaComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule      
+  ],
+  exports: [ModalTareaComponent]
+})
+export class ModalTareaModule {}

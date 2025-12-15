@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tareas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="nuevaTarea()">+</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let t of tareas">
+      {{ t.titulo }} - {{ t.materia }} - {{ t.fecha }}
+    </ion-item>
+  </ion-list>
+</ion-content>
